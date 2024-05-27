@@ -1,0 +1,215 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #9370db; /* Roxo */
+    background-repeat: repeat;
+    background-size: 5%;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.container {
+max-width: 800px;
+margin: -2cm auto 50px;  /* Ajustado para -2cm na margem superior */
+padding: 20px;
+position: relative; 
+z-index: 10;  
+}
+
+h1, h2 {
+    text-align: center;
+    color: #20b2aa; /* Verde Água */
+}
+
+.timeline {
+    position: relative;
+    list-style: none;
+}
+
+.timeline li {
+    margin-bottom: 30px;
+}
+
+.event {
+    padding: 10px 20px;
+    background-color: #1E90FF; /* Azul */
+    display: inline-block;
+    border-radius: 8px;
+    margin-left: 60px;
+    color: #ffffff; /* Branco */
+    margin-left: calc(60px + 3cm); /* Adiciona 3cm à margem esquerda existente de 60px */
+}
+
+/* Título das seções em negrito */
+.event strong {
+    font-weight: bold;
+}
+
+/* Intercalando as cores de fundo das seções */
+.timeline li:nth-child(odd) .event {
+    background-color: #1E90FF; /* Azul */
+}
+
+.timeline li:nth-child(even) .event {
+    background-color: #9370db; /* Roxo */
+}
+
+.event img, .event video {
+    vertical-align: top;
+    margin: 5px;
+    max-width: 150px;
+    border-radius: 8px;
+    transition: transform 0.4s;
+}
+
+.event img:hover, .event video:hover {
+    transform: scale(1.1);
+}
+
+.event video {
+    max-height: 150px;
+}
+
+/* Centralizar a imagem na seção Moda & Compras */
+.event.centered img {
+    display: block;
+    margin: 5px auto;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    animation: fadeIn 2s forwards;
+    visibility: hidden;
+}
+
+/* Estilo do Quiz */
+.quiz-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    margin-bottom: 5px;
+}
+
+/* Adicionando estilos para os radio buttons */
+.options input[type="radio"] {
+    display: none;
+}
+
+.options label {
+    display: block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options input[type="radio"]:checked + label {
+    background-color: #ddd;
+}
+
+.heart {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    clip-path: polygon(
+    50% 80%,
+    100% 40%,
+    100% 20%,
+    50% 0%,
+    0% 20%,
+    0% 40%
+);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.highlight-text {
+    background-color: rgba(255, 255, 255, 0.7); /* Branco com 70% de transparência */
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #20b2aa; /* Verde Água */
+    text-align: center; /* Alinhar o texto no centro */
+}
+
+.text-section p {
+    color: #20b2aa; /* Verde Água */
+    font-size: 20px;
+}
+
+#playMusicButton {
+    display: block;
+    margin: 2cm auto 1cm; /* Isso irá mover o botão 2cm para baixo */
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+/* Adicionando estilo para o layout da carta e da poesia */
+.text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Caso os conteúdos sejam grandes e precisem ser envolvidos em linhas separadas */
+    gap: 2rem;
+}
+
+
+/* Estilizando a poesia */
+.poetry {
+    font-style: italic;
+    font-size: 20px; 
+    text-align: center; /* Alinhar a poesia ao centro */
+    margin: 0; /* Remover a margem padrão do parágrafo */
+}
+
+.text-content {
+    background-color: rgba(255, 255, 255, 0.7); /* Branco com 70% de transparência */
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Adicionando Media Queries para responsividade */
+@media (max-width: 768px) {
+        .event img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .event {
+        width: 90%;
+        margin-left: 2%; /* ajuste para mover um pouco para a esquerda */
+    }
+
+    body {
+        font-size: 90%;
+    }
+}

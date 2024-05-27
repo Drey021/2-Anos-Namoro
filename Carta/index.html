@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Eliane</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/icone.gif"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+    <audio id="backgroundMusic" controls loop style="display:none;">
+    <source src="oltremare.mp3.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <div class="container">
+    <button id="playMusicButton" onclick="playMusic()">Clique para tocar música</button>
+
+    <!-- Seção da Carta -->
+    <div class="text-section text-content"> <!-- Aqui! -->
+    <h1 class="highlight-text">Uma carta para Eliane</h1>
+    <p>Querida Eliane, ❤️</p>
+    <p>Com cada batimento do meu coração, sinto a ressonância do nosso amor. Dois anos podem parecer efêmeros, mas já carregam a profundidade de uma eternidade. Você, com sua essência graciosa e feminina, se tornou a melodia que preenche meus dias e noites, que sempre quis viver, mas nunca soube que existia.</p>
+    <p>Desde o nosso primeiro olhar, senti uma conexão que transcende o tempo. Seu sorriso ilumina os meus dias mais sombrios. Em teus abraços encontrei refúgio e nas suas palavras, conforto. Você me ensinou o que significa ter uma verdadeira parceira de vida, alguém que está ao meu lado, independentemente dos desafios que surgem à nossa frente.</p>
+    <p>Nossos momentos juntos são repletos de risadas genuínas, conversas profundas e sonhos compartilhados. Nas noites, entre nossos cochichos e carinhos, sinto uma intimidade que só nós compreendemos, tocando a própria alma. Estes dois anos são apenas o prelúdio da maravilhosa sinfonia que ainda iremos compor juntos, das aventuras que ainda iremos viver e da família que ainda iremos construir.</p>
+    <P>Cada dia que passa eu te amo, cada vez mais. E hoje me vejo completamente apaixonado por você, você e a esposa que eu quero, e a mulher que desejo pra minha vida e eu te amo de todas as maneiras possiveis de se amar.</P>
+    <p>Com todo o amor e carinho que reside em meu ser,</p>
+    <p>Andrey S Soares</p>
+    </div>
+
+    <!-- Seção da Poesia -->
+    <div class="text-section text-content"> <!-- E aqui! -->
+        <h1 class="highlight-text">Poesia para Eliane</h1>
+        <p class="poetry">
+                    Na vastidão de um mar, onde a paixão ressoa,<br>
+                    Eliane, em teu olhar, o universo parece a diminuir.<br>
+                    Teu ser, mistério e luz, me envolve e entoa,<br>
+                    Um canto etéreo que faz meu coração infalivelmente seguir.<br>
+                    <br>
+                    Teus cachos dourados, dançando ao vento,<br>
+                    São fios de melancolia e raios crepusculares a brilhar.<br>
+                    Tua fragrância doce, em cada momento,<br>
+                    É o elixir que me dá vida, alento sem parar.<br>
+                    <br>
+                    Quatro luas ou quatro meses, no tempo se entrelaçam,<br>
+                    Mas sob sua luz, em teus braços, milênios parecem passar.<br>
+                    Contigo, Eliane, cada dia é uma rima, uma graça,<br>
+                    E a noite, um refúgio, onde sob teu cafuné, desejo eternamente repousar.<br>
+                    <br>
+                    Cacheados que em ondas evocam campos dourados,<br>
+                    E tua feminilidade, como estrelas, que nunca se extinguirão.<br>
+                    Em teu amor, tão profundo e ilimitado,<br>
+                    Prometo, Eliane, por todos os céus e mares, te amparar e te amar.<br>
+                </p>
+        </div>
+
+    <h2 class="highlight-text">A Nossa Historia...</h2>
+         <ul class="timeline">
+            <li>
+                <div class="event hidden">
+                    <strong>31/07/2021 Onde tudo começou</strong><br>
+                    <img src="img/Comeco1.jpeg" alt="Descrição da imagem 3a">
+                    <img src="img/Comeco2.jpeg" alt="Descrição da imagem 3b"><br>
+                    <img src="img/Comeco3.jpeg" alt="Descrição da imagem 3c">
+                    <video controls>
+                        <source src="img/Comeco4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="event hidden">
+                    <strong>24/02/2022 - Nosso 1° Encontro</strong><br>
+                    <img src="img/Namoro1.jpeg" alt="Descrição da imagem 1a">
+                    <img src="img/Namoro2.jpeg" alt="Descrição da imagem 1b">
+                </div>
+            </li>
+            <li>
+                <div class="event hidden">
+                    <strong>13/06/2022 Enfim Namorados</strong><br>
+                    <img src="img/Pedido1.jpeg" alt="Descrição da imagem 2a">
+                    <img src="img/Pedido2.jpeg" alt="Descrição da imagem 2b">
+                </div>
+            </li>
+            <li>
+                <div class="event hidden">
+                    <strong>12/11/22 Conhecendo Goiania</strong><br>
+                    <img src="img/goiania1.jpeg" alt="Descrição da imagem 4a">
+                    <img src="img/goiania2.jpeg" alt="Descrição da imagem 4b"><br>
+                    <img src="img/goiania3.jpeg" alt="Descrição da imagem 4c">
+                    <img src="img/goiania4.jpeg" alt="Descrição da imagem 4d">
+                </div>
+            </li>
+            <li>
+                <div class="event hidden">
+                    <strong>Nossas Comidinhas Romanticas</strong><br>
+                    <img src="img/img1.jpeg" alt="Descrição da imagem 6a">
+                    <video controls>
+                        <source src="img/video1.mp4" type="video/mp4">
+                    </video>
+                    <br>
+                    <img src="img/img2.jpeg" alt="Descrição da imagem 6c">
+                    <video controls>
+                        <source src="img/video2.mp4" type="video/mp4">
+                    </video>
+                    <br>
+                    <img src="img/img3.jpeg" alt="Descrição da imagem 6c">
+                    <video controls>
+                        <source src="img/video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="event hidden">
+                    <strong>Momentos felizes juntos - Celebrando nosso amor</strong><br>
+                    <img src="img/mom1.jpeg" alt="Descrição da imagem 7a">
+                    <img src="img/mom2.jpeg" alt="Descrição da imagem 7b">
+                    <img src="img/mom3.jpeg" alt="Descrição da imagem 7c">
+                    <img src="img/mom4.jpeg" alt="Descrição da imagem 7d">
+                    <img src="img/mom5.jpeg" alt="Descrição da imagem 7e">
+                    <img src="img/mom6.jpeg" alt="Descrição da imagem 7f">
+                    <img src="img/mom7.jpeg" alt="Descrição da imagem 7g">
+                    <img src="img/mom8.jpeg" alt="Descrição da imagem 7h">
+                    <img src="img/mom9.jpeg" alt="Descrição da imagem 7i">
+                    <img src="img/mom10.jpeg" alt="Descrição da imagem 7j">
+                    <img src="img/mom11.jpeg" alt="Descrição da imagem 7k">
+                    <img src="img/mom12.jpeg" alt="Descrição da imagem 7l">
+                    <img src="img/mom13.jpeg" alt="Descrição da imagem 7m">
+                    <img src="img/mom14.jpeg" alt="Descrição da imagem 7n">
+                </div>
+            </li>
+            <li>
+                <div class="event hidden">
+                    <strong>Viagens - Explorando o mundo juntos</strong><br>
+                    <img src="img/viagem1.jpeg" alt="Descrição da imagem 4a">
+                    <img src="img/viagem2.jpeg" alt="Descrição da imagem 4b">
+                    <img src="img/viagem3.jpeg" alt="Descrição da imagem 4c">
+                    <img src="img/viagem4.jpeg" alt="Descrição da imagem 4d">
+                    <img src="img/viagem5.jpeg" alt="Descrição da imagem 4e">
+                    <img src="img/viagem6.jpeg" alt="Descrição da imagem 4f">
+                    <img src="img/viagem7.jpeg" alt="Descrição da imagem 4g">
+                    <img src="img/viagem8.jpeg" alt="Descrição da imagem 4h">
+                    <img src="img/viagem13.jpeg" alt="Descrição da imagem 4i">
+                    <img src="img/viagem14.jpeg" alt="Descrição da imagem 4j">
+                    <video controls>
+                        <source src="img/viagem9.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="img/viagem10.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="img/viagem11.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="img/viagem12.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+
+<!-- Adicionando o quiz no final -->
+<li>
+    <div class="quiz-container">
+        <h2>O quão bem nos conhecemos?</h2>
+        <div class="question">1. Onde foi nosso primeiro beijo?</div>
+<ul class="options">
+    <li><input type="radio" name="q1" id="q1a" data-answer="false"><label for="q1a">Rodoviaria</label></li>
+    <li><input type="radio" name="q1" id="q1b" data-answer="true"><label for="q1b">Quarto</label></li>
+    <li><input type="radio" name="q1" id="q1c" data-answer="false"><label for="q1c">Sala</label></li>
+    <li><input type="radio" name="q1" id="q1d" data-answer="false"><label for="q1d">Shopping</label></li>
+</ul>
+
+<div class="question">2. Qual e a data da nossa dupla dinamica?</div>
+<ul class="options">
+    <li><input type="radio" name="q2" id="q2a" data-answer="false"><label for="q2a">23/09</label></li>
+    <li><input type="radio" name="q2" id="q2b" data-answer="false"><label for="q2b">23/07</label></li>
+    <li><input type="radio" name="q2" id="q2c" data-answer="true"><label for="q2c">23/08</label></li>
+    <li><input type="radio" name="q2" id="q2d" data-answer="false"><label for="q2d">23/10</label></li>
+</ul>
+
+<div class="question">3. Qual foi o 1° Presente que eu te dei ?</div>
+<ul class="options">
+    <li><input type="radio" name="q3" id="q3a" data-answer="false"><label for="q3a">Chinelo</label></li>
+    <li><input type="radio" name="q3" id="q3b" data-answer="true"><label for="q3b">Polvo</label></li>
+    <li><input type="radio" name="q3" id="q3c" data-answer="false"><label for="q3c">Mimikyu</label></li>
+    <li><input type="radio" name="q3" id="q3d" data-answer="false"><label for="q3d">Nossas Alianças</label></li>
+</ul>
+
+<div class="question">4. Qual é o meu curso?</div>
+<ul class="options">
+    <li><input type="radio" name="q4" id="q4a" data-answer="false"><label for="q4a">Gestão Empresaria</label></li>
+    <li><input type="radio" name="q4" id="q4b" data-answer="false"><label for="q4b">Marketing</label></li>
+    <li><input type="radio" name="q4" id="q4c" data-answer="true"><label for="q4c">ADS</label></li>
+    <li><input type="radio" name="q4" id="q4d" data-answer="false"><label for="q4d">Agronegócio</label></li>
+</ul>
+
+<div class="question">5. Qual foi a 1° Comida que fizemos juntos ?</div>
+<ul class="options">
+    <li><input type="radio" name="q5" id="q5a" data-answer="false"><label for="q5a">Bolinha de Queijo</label></li>
+    <li><input type="radio" name="q5" id="q5b" data-answer="false"><label for="q5b">Panetone na chapa</label></li>
+    <li><input type="radio" name="q5" id="q5c" data-answer="true"><label for="q5c">Batata-Frita</label></li>
+    <li><input type="radio" name="q5" id="q5d" data-answer="false"><label for="q5d">Pão de Alho</label></li>
+</ul>
+                    <button onclick="checkAnswers()">Verificar Respostas</button>
+                </div>
+            </li>
+        </ul>
+        <h2 class="highlight-text" style="margin-top: 1cm;">EU TE AMO FELIZ 2 ANOS DE NAMORO</h2>
+        <h2> ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️</h2>
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
